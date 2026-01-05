@@ -24,12 +24,6 @@ PRODUCT_SOONG_NAMESPACES += \
 # SEPolicy
 BOARD_VENDOR_SEPOLICY_DIRS += $(DOLBY_PATH)/sepolicy/vendor
 
-# HIDL
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += $(DOLBY_PATH)/configs/vintf/dolby_framework_matrix.xml
-DEVICE_MANIFEST_FILE += \
-    $(DOLBY_PATH)/configs/vintf/vendor.dolby.hardware.dms@2.0-service.xml \
-    $(DOLBY_PATH)/configs/vintf/vendor.dolby.media.c2@1.0-service.xml
-
 # Build codec2 packages
 PRODUCT_PACKAGES += \
     libavservices_minijail.vendor \
